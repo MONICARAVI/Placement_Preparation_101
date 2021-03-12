@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>PPE</title>
+
+  <style type="text/css">
+    .show {display:block;}
+  </style>
+</head>
+<body>
+	<div class="container">
+    <div class="jumbotron">
+      <h3 class="text-center">IMPORTANT FORMULAE AND CONCEPTS</h3>
+      <ol>
+        <li>Relative speed of train or objects moving in same direction is difference between the speed of objects/trains</li>
+        <li>Relative speed of train or objects moving in opposite direction is sum of the speed of objects/trains</li>
+        <li>Distance covered when train crosses platform/bridge is sum of length of bridge/platform and train</li>
+        <li>Distance covered when train crosses pole/man is length of the train</li>
+      </ol>
+    </div>
+    <br>
+    <ol>
+      <li>A 250 m long train is running at the speed of 40 km/hr. Find the time taken to cross a pole at the station</li>
+      <ol>
+        <li>20 s</li>
+        <li>22.5 s</li>
+        <li>25 s</li>
+        <li>30.5 s</li>
+      </ol>
+      <button onclick="viewAnswer(1)">View Answer</button>
+      <p id="1"></p>
+      <li>A 160 m long train crosses a 160 m long platform in 16 seconds. Find the speed of the train</li>
+      <ol>
+        <li>20 m/s</li>
+        <li>25 m/s</li>
+        <li>70 km/hr</li>
+        <li>30 m/s</li>
+      </ol>
+      <button onclick="viewAnswer(2)">View Answer</button>
+      <p id="2"></p>
+    </ol>
+    
+	</div>
+	<script type="text/javascript">
+      function viewAnswer(id)
+      {
+        switch(id)
+        {
+          case 1: 
+            document.getElementById(id).innerHTML = "Speed = 40*(5/18) = 11.111 m/s<br>Distance = 250 m<br>Time = distance/speed = 250/11.11 = 22.5 s"; 
+            break;
+          case 2:
+             document.getElementById(id).innerHTML = "Distance covered = 160+160 = 320 m<br>Speed = 320/16 = 20 m/s"; 
+            break;        
+        }
+      } 
+  </script>
+	<!--bootstrap js-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
