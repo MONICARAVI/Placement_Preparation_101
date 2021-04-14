@@ -10,9 +10,6 @@
 
 	<title>PPE</title>
 
-  <style type="text/css">
-    .show {display:block;}
-  </style>
 </head>
 <body>
 	<div class="container">
@@ -34,8 +31,10 @@
         <li>25 s</li>
         <li>30.5 s</li>
       </ol>
-      <button onclick="viewAnswer(1)">View Answer</button>
-      <p id="1"></p>
+      <button data-toggle="collapse" href="#question1">View Answer</button>
+      <div class="collapse" id="question1">
+        <p>Speed = 40*(5/18) = 11.111 m/s<br>Distance = 250 m<br>Time = distance/speed = 250/11.11 = 22.5 s</p> 
+      </div>
       <li>A 160 m long train crosses a 160 m long platform in 16 seconds. Find the speed of the train</li>
       <ol>
         <li>20 m/s</li>
@@ -43,25 +42,15 @@
         <li>70 km/hr</li>
         <li>30 m/s</li>
       </ol>
-      <button onclick="viewAnswer(2)">View Answer</button>
-      <p id="2"></p>
+      <button data-toggle="collapse" href="#question2">View Answer</button>
+      <div class="collapse" id="question2">
+        <p>Distance covered = 160+160 = 320 m<br>Speed = 320/16 = 20 m/s</p> 
+      </div>
+      <li></li>
     </ol>
-    
+
 	</div>
-	<script type="text/javascript">
-      function viewAnswer(id)
-      {
-        switch(id)
-        {
-          case 1: 
-            document.getElementById(id).innerHTML = "Speed = 40*(5/18) = 11.111 m/s<br>Distance = 250 m<br>Time = distance/speed = 250/11.11 = 22.5 s"; 
-            break;
-          case 2:
-             document.getElementById(id).innerHTML = "Distance covered = 160+160 = 320 m<br>Speed = 320/16 = 20 m/s"; 
-            break;        
-        }
-      } 
-  </script>
+
 	<!--bootstrap js-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
